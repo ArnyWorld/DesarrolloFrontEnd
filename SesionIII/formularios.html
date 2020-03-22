@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>FORMULARIOS</h1>
+    <!--form: etiqueta que contiene contenedores con el cual interactuara el usuario
+    action: Como valor se le manda el nombre del archivo que recuperara los datos capturados por los contenedores(input) 
+    method: Utilizada para enviar la información que contienen los contenedores(input), el valor puede ser POST o GET
+    enctype: 
+            application/x-www-form-urlencoded.- Todos los caracteres se codifican antes de enviarse.
+            multipart/form-data.- Este valor es obligatorio cuando utiliza formularios que tienen un control de carga de archivos.
+            text/plain.- Los espacios se convierten en símbolos "+", pero no se codifican caracteres especiales   
+-->
+    <form action="#" enctype="application/x-www-form-urlencoded">
+        <!--
+            label: Esta etiqueta esta asociado a un contenedor(input), el valor que tenga la propiedad for="valor"
+            debe ser la misma que el id="valor" del input.
+            input: 
+                placeholder: Permite darle una descripción como marca de agua al contenedor.
+                autocomplete: Si el valor es "on" mostrara valores insertados anteriormente en el contenedor
+                              si el valor es "off" no mostrara ningún tipo de ayuda.
+                required: Obliga al usuario a que ingrese un dato en el contenedor.
+                pattern: Restringe los valores insertados por el usuario. La restricción puede ser de letras o números.
+                   
+        -->
+        <label for="nombre"> Nombre : </label>
+        <!--type:text  Contenedor que recibirá datos variados desde letras hasta números.-->
+        <input type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre" autocomplete="off" required pattern="[A-Za-z]+"> <br>
+        <label for="contraseña">Contraseña :</label>
+        <!--type:password  Contenedor que recibirá datos variados, pero no se podrán ver los datos ingresados.-->
+        <input type="password" placeholder="Ingrese su contraseña" name="contraseña" id="contraseña"><br>
+
+        <label for="edad">Edad :</label>
+        <!--type:number  Contenedor que recibirá números.-->
+        <input type="number" placeholder="Ingrese su edad" name="edad" id="edad" pattern="[0-9]+"><br>
+
+        <label for="sexo">Sexo :</label>
+        <!--type:radio  Puede existir varias opciones, si se quiere que el usuario solo escoja una opción, 
+                        todos los contenedores deben tener el mismo valor en la propiedad name.-->
+        <input type="radio" value="hombre" name="sexo" required> Hombre
+        <input type="radio" value="mujer" name="sexo" required> Mujer
+        <input type="radio" value="otro" name="sexo" checked required> otro <br>
+        <label> Conocimientos :</label><br>
+        <!--type:checkbox  Puede existir varias opciones y el usuario puede escoger mas de una opción.-->
+        <input type="checkbox" checked> Desarrollo Web
+        <input type="checkbox"> Desarrollo Movil
+        <input type="checkbox"> COnsultor de base de datos <br>
+        <!--type:checkbox  Puede existir varias opciones y el usuario puede escoger mas de una opción.-->
+        <label for="fecha">Fecha de nacimiento :</label>
+        <!--type:date  El contenedor visualizara un calendario.-->
+        <input type="date" id="fecha" required>
+        <br>
+
+        <label for="foto">Foto :</label>
+        <!--type:file  Este contenedor permitirá que el usuario pueda subir un archivo.-->
+        <input type="file" id="file" required> <br>
+        <br>
+
+        <label for="nacionalidad">Nacionalidad :</label>
+        <!--select Agrupará una serie de opciones en una lista-->
+        <select name="nacionalidad" id="nacionalidad">
+            <option value="bolivia">Bolivia</option>
+            <option value="brazil">Brazil</option>
+            <option value="argentina" selected="selected">Argentina</option>
+            <option value="francia">Francia</option>
+        </select>
+        <br><br>
+        <!--textarea: COntenedor utilizado para recibir mucha información variada.-->
+
+        <label for="direccion">Direccion :</label>
+        <textarea name="direccion" id="direccion" cols="30" rows="10" autocomplete="off">  </textarea>
+
+        <br><br>
+        <label for="seleccion">Programa Seleccionado</label>
+        <select name="programa" id="programa">
+            <optgroup label="Sistemas Operativos">
+                <option value="windows">Windows</option>
+                <option value="linux">Linux</option>
+                <option value="Mac">MAC</option>
+            </optgroup>
+            
+            <optgroup label="Navegadores">
+                <option value="InternetExplorer">Internet Explorer</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Safari">Safari</option>
+                <option value="opera">Opera</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <form action="#">
+        <!--fieldset : Permite agrupar los contenedores de un formulario.
+            legend: Descripción de los contenedores agrupados -->
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre :</label> <br>
+            <input type="text" placeholder="Ingrese su nombre"><br>
+            <label for="">Carnet :</label> <br>
+            <input type="text" placeholder="Ingrese su carnet"> <br>
+            <label for="email">Correo :</label> <br>
+            <input type="email" placeholder="Ingrese su correo"><br>
+            <label for="sexo">Sexo :</label> <br>
+            <input type="radio" name="sexo"> Hombre
+            <input type="radio" name="sexo"> Mujer <br>
+            <label for="foto">Foto :</label> <br>
+            <input type="file" id="foto" name="foto">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Información Adicional</legend>
+            <label for="carrera">Carrera :</label> <br>
+            <select name="carrera" id="carrera">
+                <option value="informatico">Informatica</option>
+                <option value="sistemas">Ingeniería en Sistemas</option>
+                <option value="electronica">Ingeniería Electrónica</option>
+                <option value="telecomunicaciones">Telecomunicaciones</option>
+            </select><br>
+            <label for="conocimientos">Conocimientos :</label> <br>
+            <input type="checkbox" name="web" id="web"> Desarrollo Web <br>
+            <input type="checkbox" name="web" id="movil"> Desarrollo Movil <br>
+            <input type="checkbox" name="web" id="bd"> Base de Datos <br>
+            <input type="checkbox" name="web" id="seguridad"> Seguridad Informática <br>
+            <input type="checkbox" name="web" id="redes"> Redes <br>
+
+            <br>
+            <input type="submit" value="ENVIAR">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

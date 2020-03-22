@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manejo de Tablas</title>
+</head>
+
+<body>
+
+    <h3>Tabla Simple</h3>
+    <!--border: Esta propiedad permite darle un ancho de linea a la tabla
+        cellpadding: Esta propiedad permite darle una separación interna a los elementos que contiene la tabla
+                    Por ejemplo |3| |4| |5|      Sin cellpadding
+                                |  3  | |  4  | |  5  |  Con cellpadding 
+        cellspacing: Esta propiedad permite darle una separacion de celda a celda
+                    Por ejemplo |3| |4| |5|  sin cellspacing
+                                |3|   |4|   |5|  con cellspacing
+                            -->
+    <table border="2" cellpadding="10" cellspacing="20">
+        <!--
+            tr: Nos permite crear filas
+            td: Nos permite crear columnas dentro de una fila
+        -->
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h3>Tablas Completas</h3>
+    <table border="2" cellpadding="10" cellspacing="20">
+        <!--Caption: Esta etiqueta nos ayuda con el título de la tabla
+            thead: Se utiliza para crear un encabezado dentro de una tabla
+            th: Todo elemento encerrado dentro de esta etiqueta tendrá una apariencia en negritas
+            tbody: Se utiliza para crear el cuerpo de una tabla
+            tfoot: Se utiliza para crear el pie de una tabla
+        -->
+        <caption>Población En Bolivia</caption>
+        <thead>
+            <tr>
+                <th>
+                </th>
+                <th>Varones</th>
+                <th>Mujeres</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <th>La Paz</th>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+
+            <tr>
+                <th>Oruro</th>
+                <td>5</td>
+                <td>6</td>
+
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>7</th>
+                <th>9</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <h3>Combinación de tablas</h3>
+    <!--Colspan: Esta propiedad nos permite combinar columnas; se debe tener el cuidado de eliminar 
+        las celdas con las que se quiere combinar, caso contrario se desbordara la tabla
+        rowspan: Esta propiedad nos permite combinar filas; se debe tener el cuidado de eliminar 
+        las celdas con las que se quiere combinar.-->
+    <table border="2" cellpadding="10" cellspacing="20">
+        <thead>
+            <tr>
+                <th colspan="3">A</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>D</td>
+                <td rowspan="4">E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>G</td>
+
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>G</td>
+
+                <td>I</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr style="text-align:center;">
+                <td colspan="3">J</td>
+
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>

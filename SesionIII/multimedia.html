@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Etiquetas Multimedia</title>
+</head>
+
+<body>
+    <h3>Etiquetas Multimedia</h3>
+    <!--src="ubicacion del archivo de audio"  
+        controls:Permite visualizar en la página los controles básicos del archivo de audio
+        preload: auto; EL navegador carga el archivo de audio cuando se carga la página.
+        preload: metadata; El navegador solo debe cargar los metadatos cuando se carga la página.
+        preload: none;  El navegador no debe cargar el archivo de audio cuando la página se carga. 
+        loop.-  Esta propiedad permite que el audio se reproduzca una y otra vez.
+        autoplay.-  Esta propiedad permite que el archivo de audio se reproduzca automaticamente cuando
+        la página se carga.  
+    -->
+    <audio src="audio/kings.mp3" controls preload="auto" loop autoplay></audio>
+
+    <!--Esta estructura de audio se utiliza para no tener problemas de audio con diferentes navegadores,
+        para esto se debe tener el mismo audio pero en diferentes extensiones:mp3, m4a, oga.    -->
+    <audio controls loop preload="auto">
+        <source src="audio/Kings.mp3">
+        <source src="audio/Kings.m4a">
+        <source src="audio/Kings.oga">
+    </audio>
+
+    <video src="video/video.mp4" controls autoplay width="300" height="300" loop></video>
+
+    <video controls autoplay width="300" height="300" loop>
+        <source src="video/video.mp4">
+            <source src="video/video.ogg"> 
+    </video>
+
+</body>
+
+</html>
