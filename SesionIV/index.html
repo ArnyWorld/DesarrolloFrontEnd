@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aprendiendo CSS</title>
+    <!-- 
+        <style>
+        a {
+            color: red;
+        }
+        
+        p {
+            color: blue;
+        }
+    </style>
+    
+-->
+    <style>
+        @import url("css/estilos.css");
+    </style>
+
+    <!--link href="css/estilos.css" rel="stylesheet"-->
+</head>
+
+<body>
+    <!--Primera forma de dar estilo (Independiente)-->
+    <p style="color:green;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam nobis ullam id magnam earum ab ducimus quos beatae, minus modi perspiciatis reiciendis deserunt iusto adipisci repellat quaerat, aliquid, autem optio.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque accusantium maiores temporibus, iste impedit et dignissimos magni ab autem praesentium. Asperiores distinctio optio ea repudiandae possimus totam veritatis fugit.</p>
+    <!--Segunda forma de dar estilo (Interno) 
+    <style>
+        etiqueta{
+            propiedad:valor;
+        }
+    </style
+    Esta etiqueta va dentro de la etiqueta head  
+    -->
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.twitter.com">twitter</a>
+
+    <!--Tercera Forma de dar estilos, (manera externa)
+        La etiqueta link nos ayudara a poder interactuar con una hoja de estilos
+        externa. Esta etiqueta debe ir dentro de la etiqueta head.
+    -->
+
+    <!--
+        Existe una cuarta manera pero no es muy utilizada, debe ir dentro de la etiqueta head y dentro de la etiqueta style
+        <style>
+            @import url("ubicación de ja hoja de estilos");
+        </style>
+
+    -->
+
+    <!--Etiqueta con movimiento-->
+    <marquee behavior="scroll" direction="left" scrolldelay="150">HOla</marquee>
+
+    <img src="img/inicio4.jpg" alt="prueba">
+
+</body>
+
+</html>

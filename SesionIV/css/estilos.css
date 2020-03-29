@@ -1,0 +1,28 @@
+p {
+    color: blue;
+}
+
+a {
+    color: yellow;
+}
+
+form {
+    background: red;
+}
+
+h1 {
+    color: lightblue;
+}
+
+body {
+    background: yellow;
+}
+
+
+/* comentario*/
+
+img {
+    width: 500px;
+    height: 500px;
+    background: #ccc;
+}
