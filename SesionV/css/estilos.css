@@ -1,0 +1,115 @@
+/*Selectores Básicos*/
+
+#titulo {
+    color: purple;
+}
+
+.subtitulo {
+    color: green;
+}
+
+ul * {
+    color: red;
+    background: yellow;
+    display: none;
+}
+
+.cuarto {
+    color: blue;
+    display: block;
+}
+
+span {
+    color: purple;
+    display: block;
+}
+
+.HOLA {
+    color: green;
+}
+
+
+/*Selectores compuestos*/
+
+h1,
+h2,
+h3 {
+    color: red;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/*Selectores Jerarquicos*/
+
+ul li {
+    background: red;
+    color: white;
+    color: white;
+}
+
+div h3 {
+    color: purple;
+}
+
+
+/*
+div h3 span {
+    color: blue;
+}
+
+*/
+
+ul li {
+    background: black;
+    color: white;
+}
+
+
+/*Selectores específicos*/
+
+.list {
+    background: red;
+    color: white;
+}
+
+.diferente {
+    color: blue;
+}
+
+
+/*HIJO DIRECTO*/
+
+ul li>ul li {
+    background: blue;
+    color: orange;
+}
+
+li>ul {
+    color: red;
+    display: none;
+}
+
+li:hover ul {
+    display: block;
+}
+
+
+/*HERMANOS DIRECTOS*/
+
+.title-1+.subtitulo {
+    color: red;
+}
+
+.title-2+.subtitulo {
+    color: blue;
+}
+
+
+/*HERMANOS SIGUIENTES*/
+
+.hermano-mayor~.hermano {
+    background: yellow;
+}
