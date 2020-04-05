@@ -1,0 +1,115 @@
+/****************Especificidad***************/
+
+
+/*Etiquetas HTML*/
+
+body {
+    /*Valor 1*/
+    color: yellow;
+}
+
+ul li {
+    /*Valor 2*/
+    color: yellow;
+}
+
+a {
+    /*Valor 1*/
+    color: pink;
+}
+
+
+/*ID's*/
+
+#listas {
+    /*Valor 100*/
+    background: blue;
+}
+
+
+/*Clases*/
+
+.Lista {
+    /*Valor 10*/
+    color: black;
+}
+
+.Listas .Lista {
+    /*Valor 20*/
+    color: green;
+    font-weight: bold;
+}
+
+
+/*********** CASCADA *************/
+
+
+/*EN la linea 16 ya se le dió un color a las etiquetas de enlace, pero como en la linea 49 se le vuelve a dar un color,
+    el nuevo color será el último que se le está asignando, es decir el enlace sera de color verde y ya no rosado. */
+
+a {
+    color: green;
+    font-size: 15px;
+}
+
+
+/*Se pretende cambiar el color del texto que tiene dentro la etiqueta UL con la clase Listas, pero no cambiara por que el valor 
+    de la especificidad de la linea 37 es mayor que el de la linea 56. (Tomar en cuenta)*/
+
+.Listas {
+    color: black;
+}
+
+
+/************  HERENCIA **************/
+
+
+/*La etiqueta H1 en su interior tiene una etiqueta span, esta etiqueta span llega a heredar las propiedades del h1
+    como ser el color y el tamaño. */
+
+h1 {
+    color: red;
+}
+
+
+/************ INHERIT *************/
+
+
+/*Se tiene una etiqueta de párrafo y dentro una etiqueta de enlace, se puede ver que la etiqueta de enlace no hereda el 
+las propiedades de su etiqueta padre, pero si se quiere que la etiqueta de enlace herede  las propiedades de su etiqueta
+ padre se puede usar el valor INHERIT.
+ 
+ De esta manera la etiqueta de enlace siempre heredara las propiedades de su etiqueta padre*/
+
+p {
+    color: purple;
+    font-size: 20px;
+}
+
+a {
+    color: inherit;
+    font-size: inherit;
+}
+
+
+/************** INITIAL *******************/
+
+
+/*
+El valor initial reestablecera los estilos de un elemento a su estado inicial, en este caso se tiene una lista no ordenada
+a la cual se le esta dando un color y un tamaño. Pero al último elemento de la lista se le asigna un ID a la cual se 
+le aplica a las propiedades color y font-size el valor initial. Entonces el estilo del último elemento de la lista 
+será con los estilos iniciales es decir con su tamaño por defecto y su color por defecto.
+
+
+*/
+
+.Listas2 .Lista2 {
+    color: green;
+    font-size: 40px;
+}
+
+#especial {
+    color: initial;
+    font-size: initial;
+}

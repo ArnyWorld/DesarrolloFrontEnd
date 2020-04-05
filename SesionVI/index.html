@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!--ARQUITECTURA CSS   (Forma de organizar los archivos CSS en un proyecto)
+       
+                                 **METODOLOGÍAS **
+        -SMACSS
+            *Base.- normalize... 
+            *Tema.- enfoxado a la página.
+            *Estados.- Cambios
+            *Layout.- Maquetación
+            *Modulos.- agrupación de componetes
+        -OOCSS (Averiguar)
+        -ITCSS (Averiguar)
+        -BEM (Averiguar)
+    
+    -->
+
+    <!--    ESPECIFICIDAD    (Ayudarse de clases o ID's)
+        https://specificity.keegan.st/
+
+        tag(Etiquetas HTML)          -   1
+        clases                       -   10
+        id                           -   100
+        inline (atributos)           -1000
+        !important (no recomendable) -          >
+        
+    -->
+
+    <!--CASCADA    Las estilos que se le den a una etiqueta HTML, clase o ID dependera de la posicion donde se encuentre
+                    sin dejar del lado la ESPECIFICIDAD.
+    
+    -->
+
+    <!--NAVEGADOR
+            Con el navegador podemos ver que estilos tienen ciertos elementos de nuestra página, para abrir las herramientas
+            de desarrollador solo debemos presionar las teclas  
+                                                                CTRL+SHIFT+I
+                                                                
+    -->
+
+    <!--HERENCIA
+            Se considera herencia en CSS aquellos valores que los descendientes heredan de sus elementos o etiquetas superiores.
+    
+    -->
+
+    <!--
+        INHERIT .- Resetea un valor a su valor inicial
+        INITIAL.-  Resetea a los valores por defecto.
+
+    -->
+
+    <ul class="Listas" id="listas">
+        <li class="Lista">Inicio</li>
+        <li class="Lista">Nosotros</li>
+        <li class="Lista">Productos</li>
+        <li class="Lista">Login</li>
+    </ul>
+
+
+    <h1>HOLA
+        <span>  MUNDO </span>
+    </h1>
+
+
+
+    <hr>
+
+
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti modi quae tempore, laudantium beatae quis dolor ducimus labore pariatur, sint necessitatibus, hic omnis? Deserunt ad beatae, quae natus impedit assumenda. <a href="#">Ver más</a></p>
+
+    <hr>
+    <ul class="Listas2">
+        <li class="Lista2">Lista 1</li>
+        <li class="Lista2">Lista 2</li>
+        <li class="Lista2" id="especial">Lista 3</li>
+    </ul>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>
