@@ -1,0 +1,113 @@
+html {
+    /*Esta propiedad ayuda a respetar las dimensiones de un contenedor*/
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.header {
+    /*La propiedad width con su valor permiten asignar un ANCHO a un contenedor*/
+    width: 1355px;
+    /*La propiedad height con su valor permiten darle un ALTO a un contenedor*/
+    height: 100px;
+    background: red;
+}
+
+.logo {
+    width: 1050px;
+    height: 320px;
+    background: white
+}
+
+.titulo {
+    width: 1050px;
+    height: 60px;
+    background: yellow;
+}
+
+.navegacion {
+    background: black;
+    width: 1100px;
+    height: 70px;
+}
+
+.navegacion a {
+    color: green;
+    /*La propiedad display con su valor BLOCK, convertirán una etiqueta de linea a una etiqueta de bloque.*/
+    /*La propiedad display con su valor INLINE, convertirán una etiqueta de blocke a una etiqueta de linea.*/
+    /*La propiedad display con su valor INLINE-BLOCK, la etiqueta tendra las caracteristicas de una etiqueta de bloque y de linea.*/
+    display: inline-block;
+    font-size: 20px;
+    width: 250px;
+    /*250+35=285x4= 1140*/
+    height: 80px;
+    padding-top: 21px;
+}
+
+h2 {
+    width: 1050px;
+    height: 120px;
+    background: yellow;
+    display: inline;
+}
+
+.separador {
+    color: red;
+    background: white;
+}
+
+
+/************************** BOX MODEL ************************************/
+
+
+/*
+    padding.- Separación Interna  (top, right, bottom, left)
+    margin.- Separación Externa  (top, right, bottom, left)
+    */
+
+.box {
+    background: yellow;
+    /*Permite extender el fondo hasta el borde del cuadro contenido*/
+    background-clip: content-box;
+    width: 350px;
+    height: 180px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.padre {
+    width: 380px;
+    height: 300px;
+    background: purple;
+    margin-left: 100px;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+.hijo {
+    width: 190px;
+    height: 150px;
+    background: yellow;
+}
+
+
+/********************  PORCENTAJES *****************************/
+
+.ancho {
+    /*Este contenedor (.ancho) ocupará el 80% de la pantalla*/
+    width: 80%;
+    height: 120px;
+    background: green;
+    /*De esta manera se puede llevar al centro un contenedor*/
+    margin-left: auto;
+    margin-right: auto;
+}
