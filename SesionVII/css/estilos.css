@@ -111,3 +111,52 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.padre2 {
+    width: 100%;
+    height: 300px;
+    background: green;
+}
+
+
+/********************** MANEJO DE ALTURAS *******************/
+
+.imagen {
+    width: 100%;
+    height: 75vh;
+    background: green;
+    margin-top: 0;
+}
+
+.imagen .h1 {
+    margin-top: 0;
+}
+
+
+/*****************  *************/
+
+.header2 {
+    width: 100%;
+    height: 200px;
+    background: red;
+    margin-bottom: 20px;
+}
+
+.main2 {
+    width: 100%;
+    height: 450px;
+    background: yellow;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.separador {
+    width: 100%;
+    height: 300px;
+    background: green;
+}
+
+.separador .h2 {
+    margin-top: 25px;
+}
