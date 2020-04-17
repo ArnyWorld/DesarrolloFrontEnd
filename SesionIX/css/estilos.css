@@ -1,0 +1,56 @@
+/********BORDES********/
+
+
+/*
+    border-color:permite darle un color de borde a un contenedor.
+    border-style: (solid) el borde será una linea continua solida.
+                  (dashed) los bordes serán lineas segmentadas
+                  (dotted) los bordes serán puntos continuos
+                  (double) el borde será una doble linea.
+    border-width: permite darle un ancho al borde.
+    */
+
+
+/******* SOMBRAS *********/
+
+
+/*
+        box-shadow: permite darle una sombra a un contenedor
+        el primer parámetro es el desplazamiento horizontal
+        el segundo parámetro es el desplazamiento vertical
+        el tercer parámetro es el difuminado
+        el cuarto parámetro es la expansión
+        el quinto parámetro es el color de la sombra
+        el sexto(opcional) parámetro controla si la sombra será externo o interno  
+        */
+
+h1 {
+    background-color: aquamarine;
+    color: green;
+    width: 80%;
+    height: 100px;
+    /*border-right-color: red;
+            border-right-style: dashed;
+            border-right-width: 3px;
+            /*
+            border-bottom-style: solid;
+            border-bottom-color: pink;
+            border-bottom-width: 3px;
+            */
+    border: 2px dotted red;
+    box-shadow: 3px 3px 2px yellow inset;
+}
+
+a {
+    width: 120px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    border-radius: 15px;
+    /*border-bottom-right-radius: 15px;*/
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-left: 155px;
+    box-shadow: 2px 2px 5px green;
+}
