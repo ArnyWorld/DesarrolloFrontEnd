@@ -1,0 +1,75 @@
+/************ COLORES ************/
+
+
+/*  
+    COLORES LITERALES (NOMBRE)     red,green,yellow,....
+    COLORES HEXADECIMALES (CÓDIGO)    #3ea4f0
+    COLORES RGB (rgb(#(red),#(green),#(blue))
+    COLORES RGBA (rgba(#(red),#(green),#(blue),#0-1(alpha));
+    COLORES HSL  hsl(matiz (0-360), saturación(0%-100%), luminosidad(0% - 100%));
+    COLORES HSLA  hsl(matiz (0-360), saturación(0%-100%), luminosidad(0% - 100%), (alpha);
+*/
+
+
+/************* FONDOS ********************
+background-color: permite asignar un color de fondo
+background-image: permite asignar una imagen de fondo
+background-repeat: si la imagen tiene una dimensión inferior a la del contenedor
+                    se podra controlar si se quiere repetir de forma horizontal (repeat-x)
+                    o de forma vertical (repeat-y). Si se quiere que no se repita (no-repeat);
+background-size: permite asignarle un tamaño a la imagen (background-size:120px 60px).
+                (background-size:contain) El fondo(imagen) se adecuara de acuerdo a su dimensión.
+                (background-size:cover) El fondo(imagen) se adecuara de acuerdo a la dimensión del contenedor. 
+                
+background-position: permite posicionar a la imagen (top, left, center right, bottom).
+background-attachment:permite congelar una imagen en una posición.
+
+*/
+
+.header {
+    width: 100%;
+    height: 75vh;
+    background-color: green;
+    background-image: url(../img/naturaleza2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*
+    background-position: top 12px right 25px;*/
+    background-position: center center;
+}
+
+.uno,
+.dos,
+.cuatro,
+.cinco {
+    width: 90%;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uno {
+    background: rgb(18, 5, 230);
+    background: linear-gradient(90deg, rgba(18, 5, 230, 1) 0%, rgba(230, 231, 30, 1) 52%, rgba(237, 112, 34, 1) 100%);
+}
+
+.dos {
+    background-color: blue;
+}
+
+.cuatro {
+    background-color: yellow;
+}
+
+.cinco {
+    background-color: cyan;
+}
+
+.separador {
+    width: 100%;
+    height: 450px;
+    background-color: cornflowerblue;
+    background-image: url(../img/separador.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
