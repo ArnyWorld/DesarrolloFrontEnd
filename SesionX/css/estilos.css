@@ -1,0 +1,61 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.titulo{
+    background-color: lime;
+    /*position: absolute;*/
+    width: 10%;
+    /*top: 50px;;*/
+   /*right: 0px;*/
+}
+.padre{
+   position:relative;
+    width: 100%;
+    height: 800px;
+    margin-top: 50px;;
+}
+.uno{
+    width: 100%;
+    height: 250px;
+    background-color: red;
+    /*
+        position:static, relative, absolute, fixed, sticky;
+    
+        position:relative; (se basa en una referencia inicial, no altera el layout, reserva el espacio al moverlo)   
+        position:absolute;  (Ocupa solo un espacio necesario si es que no tiene declarado un ancho y alto. 
+                            Se Pierde el flujo de trabajo, su referencia es de acuerdo a una etiqueta padre).
+        */  
+  /*  position:relative;*/
+    /*Propiedades offset: top,left, bottom, right*/
+    top: 0px;
+}
+.dos{
+    width: 55%;
+    height: 500px;
+
+    /*background-color: rgba(255,255,0,.5);*/
+    background-color: yellow;
+    /*position: relative;*/
+   /* top:0px;*/
+    float:left;
+}
+.tres{
+    width: 45%;
+    height: 250px;
+    background-color: green;
+    float: right;
+}
+/* El gran problema del uso de la propiedad float es que ocasiona un desorden en el maquetado, y 
+	para evitar esto se debe crear un contenedor y aplicar diferentes propiedades para limpiar los flotados*/
+.limpiador{
+    float:none;
+    clear: both;
+}
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
