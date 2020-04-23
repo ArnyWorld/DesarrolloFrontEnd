@@ -1,0 +1,142 @@
+/********** EM    -    REM ************/
+
+ 
+html{
+    font-size: 20px;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/*La unidad de medida "em" respeta el tamaño de fuente del contexto, de la etiqueta padre o la etiqueta mas cercana.
+    1em = 16px;   (Por defecto si no se tiene una medida en la raiz)   
+    1em = 25px;         
+    2em = 50px
+
+    La unidad de medida REM respeta el tamaño fuente de la raiz. (html, root)
+
+*/
+p{
+    margin: .5rem;    /*     margin: 10px            */
+    font-size: 1em;   /*  font-size: 20px */
+}
+/*      2em (padre)            =    2em (hijo)    El hijo va interpretar a 2em como el doble de su padre (2em)   (4em)
+        3em                   =     2em                                                                           (6em)
+        10em                   =    3em                                                                           (30em)
+        xem                    =    1em
+
+        (2em)(1em)=  
+
+*/
+span{
+    font-size: 1rem;  /*75px*/
+}
+/*(1.5em)            1.5em       1.5em*/
+li{
+    font-size: 1.5em;
+}
+
+/******** ALINEACIÓN DE TEXTO *********/
+/* text-align:right | left | center | justify*/
+.texto{
+    background-color: lightblue;
+    padding: .7rem;
+}
+
+.parrafo{
+    font-size: 1.5rem;
+    /*text-align: justify;*/
+    line-height: 1.5;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+    white-space: pre-wrap;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+img{
+    width: 1rem;
+    height: auto;
+    vertical-align: baseline;
+}
+a{
+    text-decoration: none;   
+    text-shadow: 2px 2px 5px black;
+}
+
+/**************** INTERLINEADO ******************/
+/* line-height: px | rem | em |  números        (Separación entre lineas de texto ) */
+
+/**************** ALINEADO VERTICAL ******************/
+/* vertical-align: bottom | top | baseline...   (Alineado vertical del texto, utilizado mas por imagenes pequeñas)*/
+
+/**************** SEPARACIÓN DE LETRAS ******************/
+/* letter-spacing: px | rem | em |   */
+
+/**************** SEPARACIÓN DE PALABRAS ******************/
+/* word-spacing: px | rem | em |   */
+
+/**************** SUBRAYADOS ******************/
+/* text-decoration: none | underline | overline | line-through  */
+
+/**************** SOMBRAS DE TEXTO ******************/
+/* text-shadow: dh dv blur color */
+
+/********************* ESPACIOS *********************/
+/* white-space: pre | pre-wrap | no-wrap | pre -line    */
+
+
+/************************* DESBORDAMIENTO DE TEXTO  ***************************/
+/*  word-break: normal  |  break-all  |  keep-all  */
+/*   word-wrap: normal | break-word;  */
+/* overflow: hidden 
+    text-overflow: ellipsis  |  
+*/
+
+.awesome{
+    width: 70px;
+    border: 1px solid black;
+    /*word-break: break-all;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*word-wrap: break-word;*/
+}
+
+/******** ORIENTACIÓN DEL TEXTO *************/
+/* writing-mode: vertical-lr    (La orientación del texto irá de izquierda a derecha )*/
+/* writing-mode: vertical-rl    (La orientación del texto irá de derecha a izquierda)*/
+/* text-orientation : upright   (Acomodara el texto en forma vertical)*/
+.orientacion1{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    width: 55px;
+    height: 290px;
+    border: 1px solid black;
+}
+.orientacion2{
+      writing-mode: vertical-rl;
+    text-orientation: upright;
+    width: 55px;
+    height: 290px;
+    border: 1px solid black;
+}
+
+
+/*******  MAYÚSCULAS - MINÚSCULAS   *******/
+/*text-transform: uppercase;            ( El texto estará en mayúsculas)*/
+/*text-transform: lowercase;            ( El texto estará en minúsculas)*/
+/*text-transform: capitalize;            ( La primera letra de cada palabra estará en mayuscula)*/
+
+.mayus{
+    text-transform: uppercase;
+}
+.minus{
+    text-transform: lowercase;
+}
+.cap{
+    text-transform: capitalize;
+}
