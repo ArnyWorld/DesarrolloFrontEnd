@@ -1,0 +1,155 @@
+
+/*Forma de utilizar una tipografía local descargada*/
+
+@font-face{
+    font-family:'miFuente';
+    src:url(../Recursos/SourceCodePro-SemiBold.ttf);
+}
+
+
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+}
+
+.parrafo{
+    font-family:'miFuente';
+    font-size: 2em;
+    /*font-weight: bold;*/
+}
+
+.parrafo2{
+    font-size: 2em;
+    font-family: Helvetica;
+    /*font-weight: 900;*/
+    font-variant: small-caps;
+    text-decoration:line-through
+}
+
+/***************   PSEUDOCLASES *************************/
+a{
+    color:red;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+a:link{
+    color:green;
+}
+
+a:active{
+    color:yellow;
+}
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color:brown;
+    background-color: black;
+    font-size: 2.5em;
+}
+
+input[type="text"]:focus{
+    color:lightblue;
+    background-color: black;
+}
+
+
+input[type="checkbox"]:checked + label{
+    color:red;
+    font-size: 1.5em;
+}
+
+
+.menu{
+    display: none;
+}
+
+#menuH:checked + .menu{
+    display: block;
+}
+
+
+
+
+.contenedor p{
+    font-size: 1.5em;
+    font-family: Helvetica;
+    user-select: none;
+}
+
+
+
+/*
+.contenedor p:first-child{
+    color:blue;
+    background-color: lightpink;
+}
+
+.contenedor p:last-child{
+    color:red;
+    background-color: peru;
+}
+
+.contenedor p:last-child{
+    color:green;
+    background-color:lightgreen ;
+}
+*/
+
+.contenedor p:nth-child(3){
+    color:red;
+}
+
+table{
+    padding: 5px;;
+}
+table td{
+    padding: 15px;
+}
+/*
+    odd: El parámetro odd permite seleccionar filas impares.
+    even: El parámetro even permite seleccionar filas pares.
+
+*/
+tbody tr:nth-child(2n+1){
+    background-color: pink;
+}
+/*
+.contenedor p::first-line{
+    color:green;
+}*/
+
+.contenedor p:first-child::first-letter{
+    color:green;
+    font-size: 1.7em;
+}
+
+h2::before{
+/*   content:'¿';*/
+    content:'';
+    background-image: url(../img/interrogacion.png); 
+    display: inline-block;
+    background-size: cover;
+    width: 100px;
+    height: 100px;;
+   color:red;
+}
+/*h2::after{
+    content:url(../img/interrogacion.png); 
+    font-size: 55px;;
+    color:red;
+ }    */
+ .contenedor p::selection{
+     color:gold;
+     background-color: black;
+ }
+
+
+
+
+
+
+
