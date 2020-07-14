@@ -1,0 +1,8 @@
+.imagenes {
+    height: 550px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 550px;
+}
